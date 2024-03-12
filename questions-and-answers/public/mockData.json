@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "question": "What is the capital of France?",
+        "answer": "Paris",
+        "tags": [
+            "geography",
+            "Europe"
+        ]
+    },
+    {
+        "id": 2,
+        "question": "Who wrote 'To Kill a Mockingbird'?",
+        "answer": "Harper Lee",
+        "tags": [
+            "literature",
+            "books"
+        ]
+    },
+    {
+        "id": 3,
+        "question": "What is the formula for water?",
+        "answer": "H2O",
+        "tags": [
+            "chemistry",
+            "science"
+        ]
+    },
+    {
+        "id": 4,
+        "question": "What is the largest planet in our solar system?",
+        "answer": "Jupiter",
+        "tags": [
+            "astronomy",
+            "planets"
+        ]
+    },
+    {
+        "id": 5,
+        "question": "Who painted the Mona Lisa?",
+        "answer": "Leonardo da Vinci",
+        "tags": [
+            "art",
+            "history"
+        ]
+    }
+]
