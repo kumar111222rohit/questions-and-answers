@@ -1,0 +1,6 @@
+.header-container{
+    padding: 8px;
+    border: 1px solid lightblue;
+    position: sticky;
+    top: 0;
+}
