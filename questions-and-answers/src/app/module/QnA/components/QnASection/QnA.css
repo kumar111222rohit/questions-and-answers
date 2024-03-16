@@ -9,3 +9,30 @@ body {
     width: 100%;
     height: 100%;
 }
+.main-content-container{
+  display: flex;
+
+}
+.section-wrapper{
+  width: 80%;
+}
+
+
+
+
+/* QnA.css or your global stylesheet */
+
+.modal-open-btn {
+  display: none;
+}
+
+@media (max-width: 768px) { /* Adjust the breakpoint as necessary */
+  .sidebar-container {
+    display: none;
+  }
+
+  .modal-open-btn {
+    display: block;
+    /* Additional styling */
+  }
+}

@@ -10,10 +10,10 @@ export const QnA:React.FC=()=>{
 
     return(
         <div className="qna-container">
-            <Header />
-            <div>
+          <Header headerText="QnA dashboard" />
+            <div className="main-content-container">
             <Sidebar />
-            <div>
+            <div className="section-wrapper">
             <ViewQuestion/>
             <AddQuestion />
             </div>

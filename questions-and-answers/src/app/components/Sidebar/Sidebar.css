@@ -1,7 +1,9 @@
 .sidebar-container{
-    padding: 8px;
     border: 1px solid lightcoral;
     height: 100vh;
     overflow-y: scroll;
-    max-width: 400px;
+    min-width: 20%;
+}
+.header-action-container{
+    display: flex;
 }

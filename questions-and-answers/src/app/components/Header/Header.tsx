@@ -1,13 +1,20 @@
-import React from "react"
+import React, { ReactNode } from "react"
 import './Header.css'
 
-export const Header:React.FC=()=>{
+interface Props{
+    headerText: string;
+    children?: ReactNode;
+}
+export const Header:React.FC<Props>=({headerText,children})=>{
 
     return(
         <div className="header-container">
-          
-           this is my header
-
+          <div aria-label={`Header with text ${headerText}`}>
+          {headerText}
+          </div>
+         {children && <div>
+            {children}
+          </div>}
         </div>
     )
 }

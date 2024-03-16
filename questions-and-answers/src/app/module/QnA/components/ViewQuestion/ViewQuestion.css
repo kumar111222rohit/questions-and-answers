@@ -1,4 +1,5 @@
-.view-question.container{
+.view-question-container{
     padding: 8px;
     border: 1px solid lawngreen;
+    min-height: 60%;
 }
