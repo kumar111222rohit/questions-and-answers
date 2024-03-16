@@ -2,7 +2,13 @@ import { BASE_URL } from "../constants/UrlContants";
 
 export const getAllQuestions = async () => {
     try {
-        const response = await fetch(BASE_URL + '/mockData.json');
+
+        const response = await fetch(BASE_URL + '/mockData.json', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        });
         const data = await response.json();
         if (!response.ok) {
             console.log("Error in response")
@@ -15,5 +21,6 @@ export const getAllQuestions = async () => {
     }
     catch (err) {
         console.log(err)
+        // also we can report to sentry or other logger here
     }
 }
