@@ -1,13 +1,10 @@
 // import accordionData from '../../public/QnA.json';
-import { getAllQuestions } from "./services/getAllQuestions";
+import { getAllQuestions } from './services/getAllQuestions';
 
 export default async function Home() {
   // console.log(accordionData)
-  const data= await getAllQuestions()
-  console.log("data is ",data)
+  const data = await getAllQuestions();
+  console.log('data is ', data);
 
-  return (
-  <div>hi</div>
- 
-  );
+  return <div>hi</div>;
 }

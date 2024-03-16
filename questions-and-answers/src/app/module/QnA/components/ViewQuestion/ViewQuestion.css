@@ -1,5 +1,16 @@
-.view-question-container{
-    padding: 8px;
-    border: 1px solid lawngreen;
-    min-height: 60%;
+.view-question-container {
+  padding: 12px;
+  border: 1px solid lawngreen;
+  min-height: 50%;
+}
+.button-wrapper {
+  display: flex;
+  gap: 24px;
+  margin: 12px 0;
+}
+.edit-button {
+  background-color: coral;
+}
+.delete-button {
+  background-color: red;
 }

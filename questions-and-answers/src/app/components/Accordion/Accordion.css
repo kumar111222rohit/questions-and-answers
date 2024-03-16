@@ -63,17 +63,29 @@
   padding: 8px;
 } */
 
-.accordion-item{
+.accordion-item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-bottom: 1px solid lightblue;
   padding: 16px;
 }
-.accordion-title{
+
+.accordion-title {
   display: flex;
   justify-content: space-between;
 }
-.accordion-content{
+.accordion-content {
   margin-top: 12px;
+}
+.cta-wrapper {
+  display: flex;
+}
+.mobile-open-button {
+  display: none;
+}
+@media (max-width: 768px) {
+  .mobile-open-button {
+    display: block;
+  }
 }

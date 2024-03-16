@@ -1,5 +1,5 @@
 import React from 'react';
-import './Modal.css'; 
+import './Modal.css';
 
 interface ModalProps {
   children: React.ReactNode;
@@ -12,9 +12,15 @@ export const Modal: React.FC<ModalProps> = ({ children, isOpen, onClose }) => {
 
   return (
     <div className="modal-overlay" onClick={onClose}>
+      <button
+        className="modal-close-btn"
+        onClick={onClose}
+        aria-label="Modal close"
+      >
+        Close
+      </button>
       <div className="modal-content" onClick={e => e.stopPropagation()}>
         {children}
-        <button className="modal-close-btn" onClick={onClose} aria-label='Modal close'>Close</button>
       </div>
     </div>
   );

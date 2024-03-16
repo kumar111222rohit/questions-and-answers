@@ -1,0 +1,31 @@
+.submit-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition:
+    background-color 0.3s,
+    transform 0.2s;
+  margin-left: 4px;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.submit-button:active {
+  transform: scale(0.95);
+  background-color: #3e8e41;
+}
+.submit-button:disabled {
+  transform: scale(0.95);
+  background-color: grey;
+}
+
+.submit-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.5);
+}

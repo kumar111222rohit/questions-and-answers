@@ -1,38 +1,40 @@
 body {
-    margin: 0 ;
-  }
-
-.qna-container{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
+  margin: 0;
+  font-family: monospace;
 }
-.main-content-container{
+
+.qna-container {
+  position: absolute;
   display: flex;
-
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
-.section-wrapper{
-  width: 80%;
+.main-content-container {
+  display: flex;
 }
-
-
-
-
-/* QnA.css or your global stylesheet */
+.section-wrapper {
+  width: 100%;
+}
 
 .modal-open-btn {
   display: none;
 }
-
-@media (max-width: 768px) { /* Adjust the breakpoint as necessary */
+.mobile-question-icon {
+  display: none;
+}
+@media (max-width: 768px) {
   .sidebar-container {
     display: none;
+  }
+  .mobile-question-icon {
+    display: block;
   }
 
   .modal-open-btn {
     display: block;
-    /* Additional styling */
   }
+}
+.header-main {
+  background-color: #f6f7fb;
 }

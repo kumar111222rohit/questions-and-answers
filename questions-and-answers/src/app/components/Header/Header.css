@@ -1,8 +1,13 @@
-.header-container{
-    padding: 8px;
-    border: 1px solid lightblue;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
+.header-container {
+  padding: 8px;
+  border: 1px solid lightblue;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+.header-label {
+  font-weight: 600;
 }

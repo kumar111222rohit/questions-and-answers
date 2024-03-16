@@ -1,9 +1,13 @@
-.sidebar-container{
-    border: 1px solid lightcoral;
-    height: 100vh;
-    overflow-y: scroll;
-    min-width: 20%;
+.sidebar-container {
+  border: 1px solid lightcoral;
+  height: 100vh;
+  overflow-y: scroll;
+  min-width: 20%;
 }
-.header-action-container{
-    display: flex;
+.header-action-container {
+  display: flex;
+}
+.sort-btn {
+  padding: 8px !important;
+  background-color: blue;
 }

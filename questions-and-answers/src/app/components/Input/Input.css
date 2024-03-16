@@ -1,0 +1,13 @@
+.input {
+  padding: 8px;
+  min-width: 50%;
+}
+.inputBox {
+  padding: 12px;
+}
+.input-container {
+  padding: 12pxs;
+}
+.inputLabel {
+  font-weight: 600;
+}

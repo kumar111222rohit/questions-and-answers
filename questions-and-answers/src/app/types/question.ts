@@ -1,15 +1,15 @@
 export interface Question {
-    id: number;
-    question: string;
-    answer: string;
+  id: number;
+  question: string;
+  answer: string;
 }
 
 export interface QuestionForm {
-    question: string;
-    answer: string;
+  question: string;
+  answer: string;
 }
 
 export interface QuestionFormErrors {
-    question?: string;
-    answer?: string;
+  question?: string;
+  answer?: string;
 }

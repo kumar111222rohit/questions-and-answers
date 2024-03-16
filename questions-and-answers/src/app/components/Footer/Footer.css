@@ -1,6 +1,7 @@
-.footer-container{
-    padding: 8px;
-    border: 1px solid lightblue;
-    position: sticky;
-    bottom: 0;
+.footer-container {
+  padding: 8px;
+  border: 1px solid lightblue;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
