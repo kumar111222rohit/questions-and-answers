@@ -6,11 +6,6 @@ This Next.js application  provides a dashboard to play around with performing CR
 
 - [Rohit kumar](https://github.com/kumar111222rohit)
 
-## Demo
-
-The project is live here:
-
-https://open-api-rick-and-morty.vercel.app/
 
 ## Environment Settings
 
