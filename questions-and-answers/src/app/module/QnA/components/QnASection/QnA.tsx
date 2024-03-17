@@ -1,14 +1,17 @@
-import React, { useEffect, useState } from 'react';
-import './QnA.css';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+
 import { Header } from '@/app/components/Header/Header';
 import { Footer } from '@/app/components/Footer/Footer';
 import { Sidebar } from '@/app/components/Sidebar/Sidebar';
 import { AddQuestion } from '../AddQuestion/AddQuestion';
 import { ViewQuestion } from '../ViewQuestion/ViewQuestion';
 import { addQuestion } from '@/app/store/questionsReducer';
-import { useDispatch } from 'react-redux';
 import { getAllQuestions } from '@/app/services/getAllQuestions';
 import { Modal } from '@/app/components/Modal/Modal';
+import { Button } from '@/app/components/Button/Button';
+
+import './QnA.css';
 import { useQuestionContext } from '../../QuestionContext/QuestionContext';
 
 export const QnA: React.FC = () => {
@@ -33,14 +36,16 @@ export const QnA: React.FC = () => {
     <div className="qna-container">
       <Header
         customClass="header-main"
-        headerText="QnA dashboard"
+        headerText="QnA Dashboard"
         imgSrc="/static/assets/logo.svg"
         altText="Studocu logo"
         tooltipText="QnA dasboard"
         children={
-          <div className="mobile-question-icon" onClick={toggleModal}>
-            View All Questions
-          </div>
+          <Button
+            customClass="mobile-question-icon"
+            onClick={toggleModal}
+            btnLabel="View All Questions"
+          />
         }
       />
       <Modal isOpen={isModalOpen} onClose={toggleModal}>

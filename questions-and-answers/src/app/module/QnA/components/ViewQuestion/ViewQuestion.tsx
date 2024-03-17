@@ -1,12 +1,14 @@
-import React, { useContext } from 'react';
-import './ViewQuestion.css';
-import { Header } from '@/app/components/Header/Header';
-import { useQuestionContext } from '../../QuestionContext/QuestionContext';
+import React from 'react';
 import { useDispatch } from 'react-redux';
+
+import { Header } from '@/app/components/Header/Header';
 import { deleteQuestion, editQuestion } from '@/app/store/questionsReducer';
-import { ModifyQuestionForm } from '../Form/ModifyQuestionForm';
 import { QuestionForm } from '@/app/types/question';
 import { Button } from '@/app/components/Button/Button';
+
+import './ViewQuestion.css';
+import { useQuestionContext } from '../../QuestionContext/QuestionContext';
+import { ModifyQuestionForm } from '../Form/ModifyQuestionForm';
 
 export const ViewQuestion: React.FC = () => {
   const dispatch = useDispatch();
@@ -19,7 +21,6 @@ export const ViewQuestion: React.FC = () => {
   };
   const handleDelete = (questionId: number) => {
     if (question) {
-      console.log('handleDelete');
       dispatch(deleteQuestion(questionId));
       setSelectedQuestion(null);
     }
@@ -52,6 +53,7 @@ export const ViewQuestion: React.FC = () => {
               readonly={!editingQuestion}
               initialValues={question}
               showSubmit={editingQuestion}
+              showCheckBox={false}
             />
 
             <div className="button-wrapper">
@@ -70,7 +72,7 @@ export const ViewQuestion: React.FC = () => {
             <br />
           </>
         ) : (
-          <div> No Questions to be displayed. Please add some.</div>
+          <div> No Questions to be displayed. Please add or select one.</div>
         )}
       </div>
     </>

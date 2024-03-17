@@ -1,13 +1,27 @@
 .input {
   padding: 8px;
-  min-width: 50%;
+  width: 50%;
+  border-radius: 8px;
+  border: 1px solid lightblue;
 }
 .inputBox {
   padding: 12px;
+  display: flex;
+  flex-direction: column;
 }
 .input-container {
   padding: 12pxs;
 }
 .inputLabel {
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .input {
+    width: 80%;
+  }
+}
+.error {
+  color: red;
+  margin-top: 8px;
 }

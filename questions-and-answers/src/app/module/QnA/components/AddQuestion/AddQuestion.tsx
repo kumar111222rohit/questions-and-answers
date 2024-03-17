@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import './AddQuestion.css';
-import { Header } from '@/app/components/Header/Header';
-import { ModifyQuestionForm } from '../Form/ModifyQuestionForm';
+import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+
+import { Header } from '@/app/components/Header/Header';
 import { QuestionForm } from '@/app/types/question';
 import { addQuestion } from '@/app/store/questionsReducer';
 import { debounce } from '@/app/utils/debounce';
+import { DELAY_TIME } from '@/app/constants/UrlContants';
+
+import { ModifyQuestionForm } from '../Form/ModifyQuestionForm';
+import './AddQuestion.css';
 
 export const AddQuestion: React.FC = () => {
   const dispatch = useDispatch();
@@ -25,7 +28,7 @@ export const AddQuestion: React.FC = () => {
         })
       );
     },
-    enableDebounce ? 5000 : 0
+    enableDebounce ? DELAY_TIME : 0
   );
 
   return (

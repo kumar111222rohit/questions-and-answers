@@ -9,8 +9,9 @@ export const DeleteIcon: React.FC = () => {
   const { setSelectedQuestion } = useQuestionContext();
 
   const handleDeleteAll = React.useCallback(() => {
+    // for the alert we can also add Yes/NO capabilty later as per product request.
     alert('Are you sure you want to delete all questions?');
-    // for the alert we can also add Yes/NO capabilty later.
+
     dispatch(deleteAllQuestions());
     setSelectedQuestion(null);
   }, []);

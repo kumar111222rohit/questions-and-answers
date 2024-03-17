@@ -1,20 +1,12 @@
 .tooltip-container .tooltip-content {
   position: absolute;
-  background-color: lightblue;
-  color: white;
+  background-color: whitesmoke;
+  color: black;
   padding: 8px;
   border-radius: 4px;
   z-index: 1000;
   white-space: nowrap;
-}
-
-.tooltip-container .tooltip-content::after {
-  content: '';
-  position: absolute;
-  top: -5px; /* Adjust based on the tooltip's height */
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent black transparent;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  margin-top: 8px;
 }

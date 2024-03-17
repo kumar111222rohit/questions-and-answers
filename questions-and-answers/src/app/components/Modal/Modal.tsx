@@ -1,5 +1,6 @@
 import React from 'react';
 import './Modal.css';
+import { Button } from '../Button/Button';
 
 interface ModalProps {
   children: React.ReactNode;
@@ -12,13 +13,15 @@ export const Modal: React.FC<ModalProps> = ({ children, isOpen, onClose }) => {
 
   return (
     <div className="modal-overlay" onClick={onClose}>
-      <button
-        className="modal-close-btn"
-        onClick={onClose}
-        aria-label="Modal close"
-      >
-        Close
-      </button>
+      <div className="modal-header">
+        <div className="modal-header-text">Questions List View</div>
+        <Button
+          customClass="modal-close-btn"
+          onClick={onClose}
+          aria-label="Modal close"
+          btnLabel="Close"
+        />
+      </div>
       <div className="modal-content" onClick={e => e.stopPropagation()}>
         {children}
       </div>

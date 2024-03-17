@@ -1,6 +1,5 @@
 .view-question-container {
-  padding: 12px;
-  border: 1px solid lawngreen;
+  padding: 16px;
   min-height: 50%;
 }
 .button-wrapper {

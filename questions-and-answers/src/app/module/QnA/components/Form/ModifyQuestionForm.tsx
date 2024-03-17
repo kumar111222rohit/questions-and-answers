@@ -1,11 +1,12 @@
 import React from 'react';
 import { Form, Field } from 'react-final-form';
-import './ModifyQuestionForm.css';
 
-import { qnaFormValidation } from '../helper/validateForm';
 import { QuestionForm } from '@/app/types/question';
 import { Input } from '@/app/components/Input/Input';
 import { Button } from '@/app/components/Button/Button';
+
+import './ModifyQuestionForm.css';
+import { qnaFormValidation } from '../helper/validateForm';
 
 interface AddQuestionFormProps {
   onSubmit: (values: QuestionForm) => void;
@@ -13,6 +14,7 @@ interface AddQuestionFormProps {
   readonly?: boolean;
   showSubmit?: boolean;
   handleCheckBoxState?: VoidFunction;
+  showCheckBox?: boolean;
 }
 
 export const ModifyQuestionForm: React.FC<AddQuestionFormProps> = ({
@@ -21,6 +23,7 @@ export const ModifyQuestionForm: React.FC<AddQuestionFormProps> = ({
   initialValues,
   showSubmit = true,
   handleCheckBoxState,
+  showCheckBox = true,
 }) => {
   return (
     <Form
@@ -49,10 +52,12 @@ export const ModifyQuestionForm: React.FC<AddQuestionFormProps> = ({
           {showSubmit && (
             <>
               <div className="btn-wrapper">
-                <label className="checkbox">
-                  <input type="checkbox" onChange={handleCheckBoxState} />
-                  <span>Check to Simulate API call</span>
-                </label>
+                {showCheckBox && (
+                  <label className="checkbox">
+                    <input type="checkbox" onChange={handleCheckBoxState} />
+                    <span>Check to Simulate API call</span>
+                  </label>
+                )}
                 <span>
                   <Button
                     btnLabel="Submit"
@@ -62,12 +67,6 @@ export const ModifyQuestionForm: React.FC<AddQuestionFormProps> = ({
                 </span>
               </div>
             </>
-
-            // <div className="buttons">
-            //   <button type="submit" disabled={submitting || pristine}>
-            //     Submit
-            //   </button>
-            // </div>
           )}
         </form>
       )}

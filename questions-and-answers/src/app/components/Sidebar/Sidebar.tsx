@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from 'react';
 import './Sidebar.css';
 import { Header } from '../Header/Header';
-// import { getAllQuestions } from "@/app/services/getAllQuestions"
 import Accordion from '../Accordion/Accordion';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '@/app/store/questionStore';
@@ -27,9 +26,6 @@ export const Sidebar: React.FC<Props> = ({ style }) => {
       <>
         <div className="header-action-container">
           <Button onClick={handleSort} btnLabel="Sort" customClass="sort-btn" />
-          {/* <div className="sort-action" onClick={handleSort}>
-            sort
-          </div> */}
           <DeleteIcon />
         </div>
       </>

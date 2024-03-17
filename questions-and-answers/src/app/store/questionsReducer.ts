@@ -16,11 +16,10 @@ export const questionsSlice = createSlice({
   initialState,
   reducers: {
     addQuestion: (state, action: PayloadAction<Question | Question[]>) => {
+      // adding capability here to either add a single question or multiple questions from API call
       if (Array.isArray(action.payload)) {
-        // If the payload is an array, from API call, add all questions
         state.questions.push(...action.payload);
       } else {
-        // If the payload is a single question, from form, add it
         state.questions.push(action.payload);
       }
     },

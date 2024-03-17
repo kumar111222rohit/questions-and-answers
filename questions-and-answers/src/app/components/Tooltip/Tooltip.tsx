@@ -24,16 +24,12 @@ export const Tooltip: React.FC<TooltipProps> = ({ children, text }) => {
   return (
     <div
       className="tooltip-container"
+      ref={tooltipRef}
       onMouseEnter={() => setIsVisible(true)}
       onMouseLeave={() => setIsVisible(false)}
-      style={{ position: 'relative', display: 'inline-block' }}
     >
       {children}
-      {isVisible && (
-        <div className="tooltip-content" ref={tooltipRef}>
-          {text}
-        </div>
-      )}
+      {isVisible && <div className="tooltip-content">{text}</div>}
     </div>
   );
 };
