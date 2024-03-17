@@ -1,0 +1,16 @@
+{
+  "qnaDashboard": "Q&A Dashboard",
+  "createQuestion": "Create a new question",
+  "question": "Question",
+  "answer": "Answer",
+  "sort": "Sort",
+  "deleteAll": "Delete All",
+  "noQuestions": "No Questions to be displayed. Please add or select one.",
+  "submit": "Submit",
+  "editQuestion": "Edit question",
+  "deleteQuestion": "Delete question",
+  "studocu": "StuDocu: Connecting Students around the globe",
+  "viewAllQuestions": "View all questions",
+  "simulateApiCall": "Check to simulate API call",
+  "open": "Open"
+}

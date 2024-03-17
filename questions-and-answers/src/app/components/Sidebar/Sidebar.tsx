@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './Sidebar.css';
 import { Header } from '../Header/Header';
 import Accordion from '../Accordion/Accordion';
@@ -8,11 +8,14 @@ import { RootState } from '@/app/store/questionStore';
 import { DeleteIcon } from '../DeleteIcon/DeleteIcon';
 import { sortQuestions } from '@/app/store/questionsReducer';
 import { Button } from '../Button/Button';
+import { useTranslation } from 'react-i18next';
 
 interface Props {
   style?: React.CSSProperties;
 }
 export const Sidebar: React.FC<Props> = ({ style }) => {
+  const { t } = useTranslation();
+
   const questions = useSelector(
     (state: RootState) => state.questions.questions
   );
@@ -25,7 +28,11 @@ export const Sidebar: React.FC<Props> = ({ style }) => {
     return (
       <>
         <div className="header-action-container">
-          <Button onClick={handleSort} btnLabel="Sort" customClass="sort-btn" />
+          <Button
+            onClick={handleSort}
+            btnLabel={t('sort')}
+            customClass="sort-btn"
+          />
           <DeleteIcon />
         </div>
       </>

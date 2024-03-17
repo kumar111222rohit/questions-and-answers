@@ -1,0 +1,16 @@
+{
+  "qnaDashboard": "Tableau de bord Q&R",
+  "createQuestion": "Créer une nouvelle question",
+  "question": "Question",
+  "answer": "Réponse",
+  "sort": "Trier",
+  "deleteAll": "Tout supprimer",
+  "noQuestions": "Aucune question à afficher. Veuillez en ajouter ou en sélectionner une.",
+  "submit": "Soumettre",
+  "editQuestion": "Modifier la question",
+  "deleteQuestion": "Supprimer la question",
+  "studocu": "StuDocu: Connecter les étudiants du monde entier",
+  "viewAllQuestions": "Voir toutes les questions",
+  "simulateApiCall": "Cochez pour simuler l'appel d'API",
+  "open": "Ouvrir"
+}

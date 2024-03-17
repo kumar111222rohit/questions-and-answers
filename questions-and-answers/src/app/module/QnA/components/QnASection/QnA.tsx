@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
+import { useTranslation } from 'react-i18next';
 
 import { Header } from '@/app/components/Header/Header';
 import { Footer } from '@/app/components/Footer/Footer';
@@ -18,6 +19,7 @@ export const QnA: React.FC = () => {
   const dispatch = useDispatch();
   const { isModalOpen, setIsModalOpen } = useQuestionContext();
   const toggleModal = () => setIsModalOpen(!isModalOpen);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const fetchInitialData = async () => {
@@ -36,15 +38,15 @@ export const QnA: React.FC = () => {
     <div className="qna-container">
       <Header
         customClass="header-main"
-        headerText="QnA Dashboard"
+        headerText={t('qnaDashboard')}
         imgSrc="/static/assets/logo.svg"
         altText="Studocu logo"
-        tooltipText="QnA dasboard"
+        tooltipText={t('qnaDashboard')}
         children={
           <Button
             customClass="mobile-question-icon"
             onClick={toggleModal}
-            btnLabel="View All Questions"
+            btnLabel={t('viewAllQuestions')}
           />
         }
       />

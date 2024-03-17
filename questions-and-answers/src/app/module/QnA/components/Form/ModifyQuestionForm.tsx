@@ -7,6 +7,7 @@ import { Button } from '@/app/components/Button/Button';
 
 import './ModifyQuestionForm.css';
 import { qnaFormValidation } from '../helper/validateForm';
+import { useTranslation } from 'react-i18next';
 
 interface AddQuestionFormProps {
   onSubmit: (values: QuestionForm) => void;
@@ -25,6 +26,7 @@ export const ModifyQuestionForm: React.FC<AddQuestionFormProps> = ({
   handleCheckBoxState,
   showCheckBox = true,
 }) => {
+  const { t } = useTranslation();
   return (
     <Form
       onSubmit={onSubmit}
@@ -36,7 +38,7 @@ export const ModifyQuestionForm: React.FC<AddQuestionFormProps> = ({
             <Field
               name="question"
               component={Input}
-              label="Question"
+              label={t('question')}
               readonly={readonly}
             />
           </div>
@@ -44,7 +46,7 @@ export const ModifyQuestionForm: React.FC<AddQuestionFormProps> = ({
             <Field
               name="answer"
               component={Input}
-              label="Answer"
+              label={t('answer')}
               readonly={readonly}
             />
           </div>
@@ -55,12 +57,12 @@ export const ModifyQuestionForm: React.FC<AddQuestionFormProps> = ({
                 {showCheckBox && (
                   <label className="checkbox">
                     <input type="checkbox" onChange={handleCheckBoxState} />
-                    <span>Check to Simulate API call</span>
+                    <span>{t('simulateApiCall')}</span>
                   </label>
                 )}
                 <span>
                   <Button
-                    btnLabel="Submit"
+                    btnLabel={t('submit')}
                     type="submit"
                     disabled={submitting || pristine}
                   />

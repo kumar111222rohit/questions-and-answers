@@ -1,0 +1,16 @@
+{
+  "qnaDashboard": "Q&A-dashboard",
+  "createQuestion": "Stel een nieuwe vraag",
+  "question": "Vraag",
+  "answer": "Antwoord",
+  "sort": "Sorteren",
+  "deleteAll": "Alles verwijderen",
+  "noQuestions": "Geen vragen om weer te geven. Voeg er een toe of selecteer er een.",
+  "submit": "Verzenden",
+  "editQuestion": "Vraag bewerken",
+  "deleteQuestion": "Vraag verwijderen",
+  "studocu": "StuDocu: Studenten wereldwijd verbinden",
+  "viewAllQuestions": "Alle vragen bekijken",
+  "simulateApiCall": "Vink aan om API-oproep te simuleren",
+  "open": "Openen"
+}

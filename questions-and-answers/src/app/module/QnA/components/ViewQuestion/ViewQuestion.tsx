@@ -9,9 +9,11 @@ import { Button } from '@/app/components/Button/Button';
 import './ViewQuestion.css';
 import { useQuestionContext } from '../../QuestionContext/QuestionContext';
 import { ModifyQuestionForm } from '../Form/ModifyQuestionForm';
+import { useTranslation } from 'react-i18next';
 
 export const ViewQuestion: React.FC = () => {
   const dispatch = useDispatch();
+  const { t } = useTranslation();
 
   const [editingQuestion, setEditingQuestion] = React.useState(false);
   const { question, setSelectedQuestion } = useQuestionContext();
@@ -60,19 +62,19 @@ export const ViewQuestion: React.FC = () => {
               <Button
                 onClick={handleEdit}
                 disabled={editingQuestion}
-                btnLabel="Edit question"
+                btnLabel={t('editQuestion')}
                 customClass="edit-button"
               />
               <Button
                 onClick={() => handleDelete(question.id)}
-                btnLabel="Delete question"
+                btnLabel={t('deleteQuestion')}
                 customClass="delete-button"
               />
             </div>
             <br />
           </>
         ) : (
-          <div> No Questions to be displayed. Please add or select one.</div>
+          <div> {t('noQuestions')}</div>
         )}
       </div>
     </>

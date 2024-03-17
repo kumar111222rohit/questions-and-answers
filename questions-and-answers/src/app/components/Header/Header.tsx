@@ -5,7 +5,7 @@ import Image from 'next/image';
 import classNames from 'classnames';
 
 interface Props {
-  headerText: string;
+  headerText?: string;
   children?: ReactNode;
   tooltipText?: string;
   imgSrc?: string;

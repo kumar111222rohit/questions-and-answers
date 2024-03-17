@@ -9,8 +9,10 @@ import { DELAY_TIME } from '@/app/constants/UrlContants';
 
 import { ModifyQuestionForm } from '../Form/ModifyQuestionForm';
 import './AddQuestion.css';
+import { useTranslation } from 'react-i18next';
 
 export const AddQuestion: React.FC = () => {
+  const { t } = useTranslation();
   const dispatch = useDispatch();
   const [enableDebounce, setIsEnableDebounce] = useState<boolean>(false);
 
@@ -34,7 +36,7 @@ export const AddQuestion: React.FC = () => {
   return (
     <>
       <Header
-        headerText="Create a new question"
+        headerText={t('createQuestion')}
         tooltipText="Here you can add a question"
       />
       <div className="add-question-container">

@@ -1,10 +1,12 @@
 import React from 'react';
 import './Footer.css';
+import { useTranslation } from 'react-i18next';
 
 export const Footer: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <div className="footer-container" aria-label="Footer">
-      StuDocu: Connecting Students around the globe
+      {t('studocu')}
     </div>
   );
 };

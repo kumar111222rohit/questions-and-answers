@@ -1,0 +1,16 @@
+{
+  "qnaDashboard": "Panel de Q&A",
+  "createQuestion": "Crear una nueva pregunta",
+  "question": "Pregunta",
+  "answer": "Respuesta",
+  "sort": "Ordenar",
+  "deleteAll": "Eliminar todo",
+  "noQuestions": "No hay preguntas para mostrar. Por favor agregue o seleccione una.",
+  "submit": "Enviar",
+  "editQuestion": "Editar pregunta",
+  "deleteQuestion": "Eliminar pregunta",
+  "studocu": "StuDocu: Conectando estudiantes de todo el mundo",
+  "viewAllQuestions": "Ver todas las preguntas",
+  "simulateApiCall": "Marcar para simular la llamada a la API",
+  "open": "Abierto"
+}

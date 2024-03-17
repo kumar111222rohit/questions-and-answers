@@ -1,8 +1,9 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import './Accordion.css';
 import { Question } from '@/app/types/question';
 import { useQuestionContext } from '@/app/module/QnA/QuestionContext/QuestionContext';
 import { Button } from '../Button/Button';
+import { useTranslation } from 'react-i18next';
 
 interface Props {
   question: Question;
@@ -10,6 +11,7 @@ interface Props {
 const Accordion: React.FC<Props> = ({ question }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const { setSelectedQuestion, setIsModalOpen } = useQuestionContext();
+  const { t } = useTranslation();
 
   const handleClick = () => {
     setIsExpanded(!isExpanded);
@@ -37,7 +39,7 @@ const Accordion: React.FC<Props> = ({ question }) => {
               customClass="mobile-open-button"
               aria-label="Click to open question"
               onClick={handleOpenQuestion}
-              btnLabel="Open"
+              btnLabel={t('open')}
             />
             <div aria-label="Click to see answer">{isExpanded ? '-' : '+'}</div>
           </div>
