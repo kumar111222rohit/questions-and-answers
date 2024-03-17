@@ -1,6 +1,6 @@
 # Questions And Answers App
 
-This Next.js application  provides a dashboard to play around with performing CRUD application on questions.
+This Next.js application  provides a dashboard to play around with performing CRUD operation on questions and answers.
 
 ## Authors
 
