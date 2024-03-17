@@ -84,6 +84,11 @@ To run tests, run the following command
 -  add more test coverage as needed
 -  dark/light mode
 
+## Screenshots
+
+<img width="1723" alt="Screenshot 2024-03-17 at 11 24 33" src="https://github.com/kumar111222rohit/questions-and-answers/assets/8679506/ba441bec-ef07-46ef-a8d0-e442ce46bcdf">
+
+
 ## 🚀 About Me
 
 Learning, Unlearning and Re-learning everyday.
