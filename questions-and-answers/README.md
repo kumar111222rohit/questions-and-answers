@@ -87,6 +87,10 @@ To run tests, run the following command
 ## Screenshots
 
 <img width="1723" alt="Screenshot 2024-03-17 at 11 24 33" src="https://github.com/kumar111222rohit/questions-and-answers/assets/8679506/ba441bec-ef07-46ef-a8d0-e442ce46bcdf">
+<img width="521" alt="Screenshot 2024-03-17 at 11 24 49" src="https://github.com/kumar111222rohit/questions-and-answers/assets/8679506/724a6edf-95c2-4dc1-b1e3-367fb4840883">
+<img width="518" alt="Screenshot 2024-03-17 at 11 24 58" src="https://github.com/kumar111222rohit/questions-and-answers/assets/8679506/55ee438a-6646-4c80-b5a9-73d73e02a275">
+<img width="525" alt="Screenshot 2024-03-17 at 12 08 36" src="https://github.com/kumar111222rohit/questions-and-answers/assets/8679506/426176fb-e7c1-409c-92b0-24a3abd34cfe">
+
 
 
 ## 🚀 About Me
