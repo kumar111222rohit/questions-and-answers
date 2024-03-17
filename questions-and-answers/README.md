@@ -75,14 +75,6 @@ To run tests, run the following command
 - Error Handling: Implements robust error handling mechanisms.
 - Unit test for components and APIs setup on jest and react testing library
 
-## Areas of improvement in future
--  Do the initial API call on server
--  Implement intersection observer to handle infinte list of questions 
--  add domain level translations support
--  add some loaders for API calls
--  add some skeleton UI while loading
--  add more test coverage as needed
--  dark/light mode
 
 ## Component architecture
 
@@ -106,7 +98,14 @@ To run tests, run the following command
 - Tootlip
 <img width="525" alt="Screenshot 2024-03-17 at 12 08 36" src="https://github.com/kumar111222rohit/questions-and-answers/assets/8679506/426176fb-e7c1-409c-92b0-24a3abd34cfe">
 
-
+## Areas of improvement in future
+-  Do the initial API call on server
+-  Implement intersection observer to handle infinte list of questions 
+-  add domain level translations support
+-  add some loaders for API calls
+-  add some skeleton UI while loading
+-  add more test coverage as needed
+-  dark/light mode
 
 ## 🚀 About Me
 
