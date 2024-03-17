@@ -42,7 +42,7 @@ Start the app
 
 ```bash
   npm run dev
-  The should run on http://localhost:3000
+  The app should run on http://localhost:3000
 ```
 
 ## Running Tests
