@@ -5,7 +5,7 @@ import { Header } from '../Header/Header';
 import Accordion from '../Accordion/Accordion';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '@/app/store/questionStore';
-import { DeleteIcon } from '../DeleteIcon/DeleteIcon';
+import { DeleteQuestion } from '../DeleteQuestion/DeleteQuestion';
 import { sortQuestions } from '@/app/store/questionsReducer';
 import { Button } from '../Button/Button';
 import { useTranslation } from 'react-i18next';
@@ -33,7 +33,7 @@ export const Sidebar: React.FC<Props> = ({ style }) => {
             btnLabel={t('sort')}
             customClass="sort-btn"
           />
-          <DeleteIcon />
+          <DeleteQuestion />
         </div>
       </>
     );

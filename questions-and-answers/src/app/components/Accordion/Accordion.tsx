@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-import './Accordion.css';
+import { useTranslation } from 'react-i18next';
+
 import { Question } from '@/app/types/question';
 import { useQuestionContext } from '@/app/module/QnA/QuestionContext/QuestionContext';
+
+import './Accordion.css';
 import { Button } from '../Button/Button';
-import { useTranslation } from 'react-i18next';
 
 interface Props {
   question: Question;

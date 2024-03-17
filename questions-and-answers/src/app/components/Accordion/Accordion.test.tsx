@@ -7,7 +7,7 @@ import { QuestionProvider } from '../../module/QnA/QuestionContext/QuestionConte
 const mockQuestion = {
   id: 1,
   question: 'What is the capital of France?',
-  answer: 'Paris'
+  answer: 'Paris',
 };
 
 describe('Accordion Component', () => {
@@ -18,6 +18,8 @@ describe('Accordion Component', () => {
       </QuestionProvider>
     );
 
-    expect(screen.getByText('What is the capital of France?')).toBeInTheDocument();
+    expect(
+      screen.getByText('What is the capital of France?')
+    ).toBeInTheDocument();
   });
 });

@@ -10,9 +10,7 @@ describe('Header component', () => {
   it('should render header component with props passed', () => {
     render(
       <I18nextProvider i18n={i18n}>
-        <Header
-          headerText={headerText}
-        />
+        <Header headerText={headerText} />
       </I18nextProvider>
     );
 

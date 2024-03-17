@@ -35,7 +35,7 @@ export const Header: React.FC<Props> = ({
         <div
           className="header-label"
           aria-label={`Header with text ${headerText}`}
-          data-testid='header-text'
+          data-testid="header-text"
         >
           {headerText}
         </div>

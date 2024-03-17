@@ -9,7 +9,7 @@ interface Props {
   disabled?: boolean;
   customClass?: string;
   ariaLabel?: string;
-  dataTestId?:string;
+  dataTestId?: string;
 }
 export const Button: React.FC<Props> = ({
   onClick,

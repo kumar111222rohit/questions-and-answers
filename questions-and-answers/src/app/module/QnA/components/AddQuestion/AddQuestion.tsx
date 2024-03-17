@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { useTranslation } from 'react-i18next';
 
 import { Header } from '@/app/components/Header/Header';
 import { QuestionForm } from '@/app/types/question';
 import { addQuestion } from '@/app/store/questionsReducer';
 import { debounce } from '@/app/utils/debounce';
-import { DELAY_TIME } from '@/app/constants/UrlContants';
+import { DELAY_TIME_IN_MILLISECONDS } from '@/app/constants/UrlContants';
 
 import { ModifyQuestionForm } from '../Form/ModifyQuestionForm';
 import './AddQuestion.css';
-import { useTranslation } from 'react-i18next';
 
 export const AddQuestion: React.FC = () => {
   const { t } = useTranslation();
@@ -30,7 +30,7 @@ export const AddQuestion: React.FC = () => {
         })
       );
     },
-    enableDebounce ? DELAY_TIME : 0
+    enableDebounce ? DELAY_TIME_IN_MILLISECONDS : 0
   );
 
   return (

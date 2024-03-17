@@ -1,6 +1,6 @@
 import React from 'react';
-import { render,screen } from '@testing-library/react';
-import { Footer } from './Footer'; 
+import { render, screen } from '@testing-library/react';
+import { Footer } from './Footer';
 import { I18nextProvider } from 'react-i18next';
 import i18n from '../../../../i18';
 
@@ -14,6 +14,8 @@ describe('Footer component', () => {
 
     const footerElement = screen.getByTestId('footer');
     expect(footerElement).toBeInTheDocument();
-    expect(footerElement).toHaveTextContent('StuDocu: Connecting Students around the globe');
+    expect(footerElement).toHaveTextContent(
+      'StuDocu: Connecting Students around the globe'
+    );
   });
 });

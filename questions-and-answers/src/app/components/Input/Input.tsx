@@ -10,7 +10,7 @@ interface InputProps {
   };
   label?: string;
   readonly?: boolean;
-  dataTestId?:string;
+  dataTestId?: string;
 }
 
 export const Input: React.FC<InputProps> = ({
@@ -23,7 +23,11 @@ export const Input: React.FC<InputProps> = ({
   return (
     <div className="input-container">
       {label && (
-        <div className="inputLabel" aria-label={`Input with label ${label}`} data-testid='input-label'>
+        <div
+          className="inputLabel"
+          aria-label={`Input with label ${label}`}
+          data-testid="input-label"
+        >
           {label}
         </div>
       )}

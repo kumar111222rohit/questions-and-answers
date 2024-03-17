@@ -4,7 +4,7 @@ import { deleteAllQuestions } from '@/app/store/questionsReducer';
 import { useQuestionContext } from '@/app/module/QnA/QuestionContext/QuestionContext';
 import { Button } from '../Button/Button';
 
-export const DeleteIcon: React.FC = () => {
+export const DeleteQuestion: React.FC = () => {
   const dispatch = useDispatch();
   const { setSelectedQuestion } = useQuestionContext();
 

@@ -6,7 +6,6 @@ This Next.js application  provides a dashboard to play around with performing CR
 
 - [Rohit kumar](https://github.com/kumar111222rohit)
 
-
 ## Environment Settings
 
 To run this project, node version required
@@ -76,7 +75,6 @@ To run tests, run the following command
 - Error Handling: Implements robust error handling mechanisms.
 - Unit test for components and APIs setup on jest and react testing library
 
-
 ## Component architecture
 
 - Gloabl state management is done via redux store
@@ -84,29 +82,29 @@ To run tests, run the following command
 
 ![component diagram drawio](https://github.com/kumar111222rohit/questions-and-answers/assets/8679506/ceb8a6d0-8935-4e3c-ba0a-bdbe7ed38b2c)
 
-
 ## Screenshots
 
 - Desktop view
-<img width="1723" alt="Screenshot 2024-03-17 at 11 24 33" src="https://github.com/kumar111222rohit/questions-and-answers/assets/8679506/ba441bec-ef07-46ef-a8d0-e442ce46bcdf">
+  <img width="1723" alt="Screenshot 2024-03-17 at 11 24 33" src="https://github.com/kumar111222rohit/questions-and-answers/assets/8679506/ba441bec-ef07-46ef-a8d0-e442ce46bcdf">
 
 - Mobile View
-<img width="521" alt="Screenshot 2024-03-17 at 11 24 49" src="https://github.com/kumar111222rohit/questions-and-answers/assets/8679506/724a6edf-95c2-4dc1-b1e3-367fb4840883">
+  <img width="521" alt="Screenshot 2024-03-17 at 11 24 49" src="https://github.com/kumar111222rohit/questions-and-answers/assets/8679506/724a6edf-95c2-4dc1-b1e3-367fb4840883">
 
 - Mobile View questions modal
-<img width="518" alt="Screenshot 2024-03-17 at 11 24 58" src="https://github.com/kumar111222rohit/questions-and-answers/assets/8679506/55ee438a-6646-4c80-b5a9-73d73e02a275">
+  <img width="518" alt="Screenshot 2024-03-17 at 11 24 58" src="https://github.com/kumar111222rohit/questions-and-answers/assets/8679506/55ee438a-6646-4c80-b5a9-73d73e02a275">
 
 - Tootlip
-<img width="525" alt="Screenshot 2024-03-17 at 12 08 36" src="https://github.com/kumar111222rohit/questions-and-answers/assets/8679506/426176fb-e7c1-409c-92b0-24a3abd34cfe">
+  <img width="525" alt="Screenshot 2024-03-17 at 12 08 36" src="https://github.com/kumar111222rohit/questions-and-answers/assets/8679506/426176fb-e7c1-409c-92b0-24a3abd34cfe">
 
 ## Areas of improvement in future
--  Do the initial API call on server
--  Implement intersection observer to handle infinte list of questions 
--  add domain level translations support
--  add some loaders for API calls
--  add some skeleton UI while loading
--  add more test coverage as needed
--  dark/light mode
+
+- Do the initial API call on server
+- Implement intersection observer to handle infinte list of questions
+- add domain level translations support
+- add some loaders for API calls
+- add some skeleton UI while loading
+- add more test coverage as needed
+- dark/light mode
 
 ## 🚀 About Me
 
