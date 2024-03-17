@@ -80,7 +80,7 @@ To run tests, run the following command
 ## Component architecture
 
 - Gloabl state management is done via redux store
-- Props sharing within components via react context
+- Props sharing among components via react context
 
 ![component diagram drawio](https://github.com/kumar111222rohit/questions-and-answers/assets/8679506/ceb8a6d0-8935-4e3c-ba0a-bdbe7ed38b2c)
 
