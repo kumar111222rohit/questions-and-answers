@@ -42,6 +42,7 @@ Start the app
 
 ```bash
   npm run dev
+  then open http://localhost:3000
 ```
 
 ## Running Tests
