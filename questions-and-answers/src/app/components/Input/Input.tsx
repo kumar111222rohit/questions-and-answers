@@ -10,6 +10,7 @@ interface InputProps {
   };
   label?: string;
   readonly?: boolean;
+  dataTestId?:string;
 }
 
 export const Input: React.FC<InputProps> = ({
@@ -17,11 +18,12 @@ export const Input: React.FC<InputProps> = ({
   meta,
   label,
   readonly,
+  dataTestId,
 }) => {
   return (
     <div className="input-container">
       {label && (
-        <div className="inputLabel" aria-label={`Input with label ${label}`}>
+        <div className="inputLabel" aria-label={`Input with label ${label}`} data-testid='input-label'>
           {label}
         </div>
       )}
@@ -31,6 +33,7 @@ export const Input: React.FC<InputProps> = ({
           readOnly={readonly}
           aria-label="Input box"
           className="input"
+          data-testid={dataTestId}
         />
         {meta.touched && (meta.error || meta.submitError) && (
           <span className="error">{meta.error || meta.submitError}</span>

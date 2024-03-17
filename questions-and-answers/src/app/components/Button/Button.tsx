@@ -9,6 +9,7 @@ interface Props {
   disabled?: boolean;
   customClass?: string;
   ariaLabel?: string;
+  dataTestId?:string;
 }
 export const Button: React.FC<Props> = ({
   onClick,
@@ -17,6 +18,7 @@ export const Button: React.FC<Props> = ({
   disabled,
   customClass = '',
   ariaLabel = '',
+  dataTestId,
 }) => {
   return (
     <button
@@ -25,6 +27,7 @@ export const Button: React.FC<Props> = ({
       type={type}
       disabled={disabled}
       aria-label={ariaLabel}
+      data-testid={dataTestId}
     >
       {btnLabel}
     </button>

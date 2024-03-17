@@ -34,20 +34,23 @@ export const ModifyQuestionForm: React.FC<AddQuestionFormProps> = ({
       initialValues={initialValues}
       render={({ handleSubmit, submitting, pristine }) => (
         <form onSubmit={handleSubmit}>
-          <div>
+          <div  >
             <Field
               name="question"
               component={Input}
               label={t('question')}
               readonly={readonly}
+              dataTestId='question'
+             
             />
           </div>
-          <div>
+          <div >
             <Field
               name="answer"
               component={Input}
               label={t('answer')}
               readonly={readonly}
+              dataTestId='answer'
             />
           </div>
 
@@ -60,11 +63,12 @@ export const ModifyQuestionForm: React.FC<AddQuestionFormProps> = ({
                     <span>{t('simulateApiCall')}</span>
                   </label>
                 )}
-                <span>
+                <span >
                   <Button
                     btnLabel={t('submit')}
                     type="submit"
                     disabled={submitting || pristine}
+                    dataTestId='submit'
                   />
                 </span>
               </div>

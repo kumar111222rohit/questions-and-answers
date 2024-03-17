@@ -34,7 +34,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/app/utils/debounce.js",
-    "src/app/utils/tooltip.js"
+    "src/app/utils/tooltip.js",
+    "jest.setup.js"
   ],
   "exclude": [
     "node_modules"

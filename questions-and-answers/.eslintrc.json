@@ -10,10 +10,13 @@
     "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
+    "@typescript-eslint/no-this-alias": "off",
+    "@typescript-eslint/ban-types": "off",
     "@typescript-eslint/no-explicit-any": "off",
+    "prefer-rest-params": "off",
     "no-unused-vars": "warn",
     "no-console": "off",
-    "no-useless-catch": "off",
+    "no-useless-catch": "warn",
     "no-undef": "off",
     "quotes": [
       "error",
