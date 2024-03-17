@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Questions And Answers App
 
-## Getting Started
+This Next.js application  provides a dashboard to play around with performing CRUD application on questions.
 
-First, run the development server:
+## Authors
+
+- [Rohit kumar](https://github.com/kumar111222rohit)
+
+## Demo
+
+The project is live here:
+
+https://open-api-rick-and-morty.vercel.app/
+
+## Environment Settings
+
+To run this project, node version required
+` v20.11.0`
+
+## Local Installation
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone  https://github.com/kumar111222rohit/questions-and-answers.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  cd questions-and-answers
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Install dependencies
 
-## Learn More
+```bash
+  npm install or npm i
+```
 
-To learn more about Next.js, take a look at the following resources:
+Build the app
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+  npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Start the app
 
-## Deploy on Vercel
+```bash
+  npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Running Tests
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To run tests, run the following command
+
+```bash
+  npm run test
+```
+
+## Features
+
+- Built on Next.js
+- Responsive for mobile and desktop
+- Accessibility: Built with WCAG support for inclusive user experience.
+
+- Type Safety: Ensured by TypeScript for enhanced code maintainability.
+
+- React Framework: Utilizes React for efficient component-based development.
+
+- Reusable Components: Promotes modularity and code reusability.
+- Localization Ready: Supports potential internationalization efforts.
+- Client-Side Rendering (CSR): Enables dynamic updates and interactivity.
+- Code Splitting: Optimizes bundle size and loading time.
+- Linting and Prettier: Enforces consistent code style and formatting.
+- React redux for global state managament
+- React Context: Provides centralized state management among components.
+- Functional Components and Hooks: Leverages modern React features for component composition.
+- API Integration: Seamlessly fetches data from the Rick and Morty API.
+- Code Modularization: Organizes code into logical modules for better readability.
+- Error Handling: Implements robust error handling mechanisms.
+- Unit test for components and APIs setup on jest and react testing library
+
+## Areas of improvement in future
+-  Do the initial API call on server
+-  Implement intersection observer to handle infinte list of questions 
+-  add domain level translations support
+-  add some loaders for API calls
+-  add some skeleton UI while loading
+-  add more test coverage as needed
+-  dark/light mode
+
+## 🚀 About Me
+
+Learning, Unlearning and Re-learning everyday.
