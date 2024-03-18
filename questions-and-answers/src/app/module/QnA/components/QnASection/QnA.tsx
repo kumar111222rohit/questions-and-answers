@@ -26,10 +26,8 @@ export const QnA: React.FC = () => {
       try {
         const questions = await getAllQuestions();
         dispatch(addQuestion(questions));
-        return { props: {} };
       } catch (error) {
         console.error(error);
-        return { props: {} };
       }
     };
     fetchInitialData();
