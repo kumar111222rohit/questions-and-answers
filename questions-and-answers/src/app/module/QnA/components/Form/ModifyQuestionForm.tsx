@@ -10,7 +10,7 @@ import './ModifyQuestionForm.css';
 import { qnaFormValidation } from '../helper/validateForm';
 
 interface AddQuestionFormProps {
-  onSubmit: () => void;
+  onSubmit: (values: QuestionForm) => void;
   initialValues?: Partial<QuestionForm>;
   readonly?: boolean;
   showSubmit?: boolean;
