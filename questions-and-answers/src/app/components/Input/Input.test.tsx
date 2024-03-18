@@ -5,7 +5,7 @@ import { Input } from './Input';
 describe('Input component', () => {
   it('should render the input component', () => {
     const inputProps = {
-      input: { name: 'testInput', value: '' },
+      input: { name: 'testInput' },
       meta: { touched: false },
       label: 'Input box',
       dataTestId: 'input',
