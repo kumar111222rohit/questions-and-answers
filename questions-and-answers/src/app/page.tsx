@@ -7,7 +7,7 @@ import { Header } from './components/Header/Header';
 export default function Home() {
   return (
     <>
-      <Header imgSrc="/static/assets/logo.svg" customClass="header-main" />
+      <Header imgSrc="/static/assets/logo.png" customClass="header-main" />
       <div className="home-page-button">
         <Link href="/qna">
           <Button btnLabel="Click to see assignment" />

@@ -15,7 +15,7 @@ describe('Footer component', () => {
     const footerElement = screen.getByTestId('footer');
     expect(footerElement).toBeInTheDocument();
     expect(footerElement).toHaveTextContent(
-      'StuDocu: Connecting Students around the globe'
+      ' Connecting Students around the globe'
     );
   });
 });

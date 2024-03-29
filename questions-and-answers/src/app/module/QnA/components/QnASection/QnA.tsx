@@ -37,7 +37,7 @@ export const QnA: React.FC = () => {
       <Header
         customClass="header-main"
         headerText={t('qnaDashboard')}
-        imgSrc="/static/assets/logo.svg"
+        imgSrc="/static/assets/logo.png"
         altText="Studocu logo"
         tooltipText={t('qnaDashboard')}
         children={
