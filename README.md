@@ -85,20 +85,20 @@ To run tests, run the following command
 ## Screenshots
 
 - Desktop view
-  
-  <img width="1723" alt="Screenshot 2024-03-17 at 11 24 33" src="https://github.com/kumar111222rohit/questions-and-answers/assets/8679506/ba441bec-ef07-46ef-a8d0-e442ce46bcdf">
+  <img width="1726" alt="Screenshot 2024-03-29 at 15 15 42" src="https://github.com/kumar111222rohit/questions-and-answers/assets/8679506/2eb32114-a956-4839-bd30-78ef0bb0401d">
+
 
 - Mobile View
   
-  <img width="521" alt="Screenshot 2024-03-17 at 11 24 49" src="https://github.com/kumar111222rohit/questions-and-answers/assets/8679506/724a6edf-95c2-4dc1-b1e3-367fb4840883">
+<img width="470" alt="Screenshot 2024-03-29 at 15 16 10" src="https://github.com/kumar111222rohit/questions-and-answers/assets/8679506/70b813f8-faa7-4291-8d5a-10042f410300">
 
 - Mobile View questions modal
-- 
-  <img width="518" alt="Screenshot 2024-03-17 at 11 24 58" src="https://github.com/kumar111222rohit/questions-and-answers/assets/8679506/55ee438a-6646-4c80-b5a9-73d73e02a275">
+- <img width="470" alt="Screenshot 2024-03-29 at 15 16 16" src="https://github.com/kumar111222rohit/questions-and-answers/assets/8679506/02d3ed09-5ea8-4c83-a776-73ae6163fd37">
+
 
 - Tootlip
-  
-  <img width="525" alt="Screenshot 2024-03-17 at 12 08 36" src="https://github.com/kumar111222rohit/questions-and-answers/assets/8679506/426176fb-e7c1-409c-92b0-24a3abd34cfe">
+  <img width="1728" alt="Screenshot 2024-03-29 at 15 15 59" src="https://github.com/kumar111222rohit/questions-and-answers/assets/8679506/9ff104ed-1316-476c-b31f-928ce2bf7335">
+
 
 ## Areas of improvement in future
 
